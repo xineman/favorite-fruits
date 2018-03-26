@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 7px;
+  cursor: pointer;
+  &:last-child {
+    margin-bottom: 10px;
+  }
+}
+.active {
+  box-shadow: 0 0 7px 0 grey;
+}
+.title {
+  flex-basis: 20%;
+}
+.count {
+  text-align: right;
+  flex-basis: 20%;
+}
+.progressContainer {
+  border: 1px black solid;
+  flex-grow: 1;
+  max-width: 400px;
+  height: 20px;
+}
+
+.progressBar {
+  height: 100%;
+  width: 0;
+  transition: .3s;
+}
